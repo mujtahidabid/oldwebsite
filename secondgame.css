@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    color: #fff;
+    background: #000;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 13%;
+    background: transparent;
+    transition: all ease .50s;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 0px;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    margin: 0 30px;
+    padding: 2px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all ease .50s;
+
+}
+.navlist a:hover{
+    border-bottom: 2px solid #fff;
+
+}
+
+.navlist a.active{
+    border-bottom: 2px solid #fff;
+}
+.right-nav{
+    display: flex;
+    align-content: center;
+
+}
+.h-btn{
+    display: inline-block;
+    padding: 9px  20px;
+    border: 1px solid #f5dac8;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-right: 20px;
+    color: #fff;
+    transition: all ease .50s;
+}
+.h-btn:hover{
+    transform: scale(1.2);
+    color: #000;
+    background: #fff;
+    border: 1px solid;
+}
+#menu-icon{
+    font-size: 42px;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+.section{
+    padding: 0 13%;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(valorant.jpg);
+    background-size: cover;
+    
+}
+.container{
+    padding-top: 250px;
+   margin-left: 40px;
+   text-align:center;
+}
+.container h6{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+.container h1{
+    font-size: 100px;
+    margin: 0px 0px 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: "Permanent Marker", serif;
+    color: rgb(255, 255, 255);
+    align-items: center;
+
+}
+.container h3{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.container p{
+    width: 500px;
+    max-width: 100%;
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.container a{
+    display: inline-block;
+    column-rule-color: #000;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 9px 25px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all ease 0.50s;
+
+}
+.container a:hover{
+    transform: scale(1.02);
+    color: white;
+    border: 1px solid #f5dac8;
+    background: transparent;
+    
+}
+.container a .cta{
+    border: 1px solid #f5dac8;
+    color: #fff;
+    background: transparent;
+    margin-left: 20px;
+    transition: all ease .50s;
+    transform: scale(1.02);
+}
+.container a.cta i{
+    margin-right: 8px;
+}
+.social{
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+}
+.social i{
+    display: inline-block;
+    color: #f5dac8;
+    margin-right: 22px;
+    font-size: 24px;
+    transition: all ease .50s;
+
+}
+.social i:hover{
+    color: #fff;
+    transform: translateY(-25px);
+}
+#id {
+    text-align: center;
+}
+@media (max-width: 1450px) {
+    header{padding: 17px 8%;}
+    section{padding: 0 8% }
+    .social{left: 8%;}
+    .container{ padding-top: 230px;}
+
+}
+@media (max-width: 1100px){
+    .container h1{ 
+        font-size: 80px;
+        margin: 0px 0px 25px;}
+    .container p{
+        margin-bottom: 30px;
+    }
+    .container h6{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:950px){
+    header{padding: 17px 5%;}
+    section{padding: 0 5% }
+    .social{left: 5%;}
+    .container{ padding-top: 230px;
+               
+}
+}
+
+@media (max-width: 860px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 50px 50px;
+        top: 0;
+        right: 0;
+        left: 100%;
+        bottom: 0;
+        display: flex;
+        background: #db8c1c;
+        flex-direction: column;
+        transition: all ease .50s;
+
+    }
+    .navlist a{
+        display: block;
+        padding: 0px;
+        margin: 0px 0px 40px 0px;
+        font-size: 2.1rem;
+        font-weight: 400;
+        color: #f5dac8;
+        border-bottom: none;
+    }
+    .navlist a.active{
+        border-bottom: none;
+        color: #fff;
+
+    }
+    .navlist a:hover{
+        border-bottom: none;
+        color: #fff;
+    }
+    .navlist.open{
+        left:0;
+    }
+}
+@media (max-width: 535px){
+    .container h1{
+        font-size: 70px;
+        max-width: fit-content;
+    }
+    .hero {
+        background : url(potrait\ valorant.jpg);
+        background-size: cover;
+    }
+}

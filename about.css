@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: bisque;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+    
+}
+    
+ h1{
+    font-size: 100px;
+ }   
+    header {
+        background-color: #1a24af; /* Vibrant orange theme */
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        scroll-behavior: smooth;
+        
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        border: double black 5px;
+        text-align:center;
+       
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+        
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        
+    }
+    
+    nav ul li a:hover {
+        color: #65e7f3; /* Bright yellow hover effect */
+        transition: color 1.2s;
+        animation:ease-out;
+        
+    }
+    
+    h1, h2 {
+        margin: 20px 0;
+    }
+    
+    section {
+        margin: 40px auto;
+        width: 80%;
+        max-width: 1200px;
+    }
+    img{
+        border: 1px solid black;
+        padding: 4px;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 40px auto;
+        width: 175px;
+        height: 200px;
+    }
+    h2 {
+        color: #009688; /* Vibrant teal theme */
+        text-align: center;
+        font-size: 2rem;
+    }
+    h4{
+        border: 3px solid #009688;
+        border-radius: 1rem;
+        padding: 0.7rem;
+        width: stretch;
+        font-family: "Bebas Neue", sans-serif;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        font-size: 1.9rem;
+        
+    }
+    
+    /* Card Styling */
+    .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 255, 195, 0.258);
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.4s ease, box-shadow 0.4s ease ;
+        padding: 20px;
+        background-size: cover;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(255, 247, 0, 0.493);
+    }
+    
+    .card-content {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .card h3 {
+        color: #FF4081; /* Vibrant pink for project titles */
+    }
+    
+    .card p {
+        color: #666;
+        font-size: 1rem;
+    }
+    
+    /* Animation for Section Titles */
+    h2::before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #FF5722;
+        margin: 10px auto;
+    }
+    p a {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border: solid 2px rgb(0, 11, 128);
+        font-weight: 400;
+        font-size: large;
+        border-radius: 1rem;
+        padding: 10px;
+        transform: scale(7);
+        box-shadow: 0px 40px 90px rgb(255, 247, 600);
+        
+    }
+    p a:hover{
+        background-color: #10568784;
+        color: rgb(255, 255, 255);
+        
+
+    }
+    
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #009688;
+        color: white;
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        height: 13vh;
+        padding-top: 40px;
+    }
+    
+    #preloader{
+        background: #000 url(book.png) no-repeat center center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+      }
